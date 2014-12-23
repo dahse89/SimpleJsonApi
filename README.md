@@ -35,11 +35,51 @@ Otherwise there are also detailed error messages:
 ```json
 {
     "error": {
+        "status": 401,
+        "description": "Unauthorized: Authorization missing or invalid.",
+        "message": "Missing header authorization",
+        "request": "",
+        "at": "2014-12-23 11:06:59"
+    }
+}
+
+{
+    "error": {
+        "status": 400,
+        "description": "Bad Request: The request wasn't valid.",
+        "message": "Empty request",
+        "request": "",
+        "at": "2014-12-23 11:07:18"
+    }
+}
+
+{
+    "error": {
+        "status": 400,
+        "description": "Bad Request: The request wasn't valid.",
+        "message": "Missing 'method' field in request",
+        "request": "alskl",
+        "at": "2014-12-23 11:09:14"
+    }
+}
+
+{
+    "error": {
         "status": 400,
         "description": "Bad Request: The request wasn't valid.",
         "message": "Method test() requires min. 2 and accept max. 3 parameter(s), given: 1",
         "request": "{\"method\":\"test\",\"params\":[1]}",
         "at": "2014-12-23 10:12:32"
+    }
+}
+
+{
+    "error": {
+        "status": 400,
+        "description": "Bad Request: The request wasn't valid.",
+        "message": "Method test() accept max. 1 parameters, given: 3",
+        "request": "{\"method\":\"test\",\"params\":[1,2,3]}",
+        "at": "2014-12-23 10:06:22"
     }
 }
 ```
