@@ -7,7 +7,7 @@ abstract class StatusMessages {
             case ServerStatus::BAD_REQUEST:
                 return "Bad Request: The request wasn't valid.";
             case ServerStatus::UNAUTHORIZED:
-                return "Unauthorized: Authentication missing or invalid.";
+                return "Unauthorized: Authorization missing or invalid.";
             case ServerStatus::NOT_FOUND:
                 return "Not Found: The requested resource could not be found.";
             case ServerStatus::INTERNAL_SERVER_ERROR:

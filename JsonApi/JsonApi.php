@@ -57,7 +57,7 @@ class JsonApi
         if(!$this->request){
             $this->endError("Empty request",ServerStatus::BAD_REQUEST);
         }
-        if(!array_key_exists('method',$request)){
+        if(!isset($request['method'])){
             $this->endError("Missing 'method' field in request",ServerStatus::BAD_REQUEST);
         }
 
