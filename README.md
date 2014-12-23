@@ -54,7 +54,7 @@ $API->setAuth($key);
 /* arm the API */
 $API->receivePOST();
 ```
-A general way to call the API is using CURL:
+**Call the API** in a general way (using CURL):
 for example:
 ```bash
  curl -XPOST -H 'Authorization: test' localhost/JsonApi/api.php -d '{"method":"test","params":[1,2,3]}'
